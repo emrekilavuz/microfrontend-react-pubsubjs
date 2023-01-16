@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.img.imgHidden {
+  visibility: hidden;
+}
+
+aside.sidebar {
+  width: 13rem;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(130, 160, 150, 0.9);
+  color: #fafafa;
+  border-radius: 5px;
+  box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: 0.5s linear;
+}
+
+aside.sidebar.hidden {
+  transform: translateX(-400px);
+}
+
+aside.sidebar.minimized {
+  width: 3.5rem;
+}
+
+aside.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 5px;
+}
+
+aside.sidebar ul li {
+  margin: 1rem 3px;
+  padding: 0.5rem 3px;
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+}
+
+aside.sidebar ul li a {
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+aside.sidebar ul li a svg {
+  position: absolute;
+  left: 0.44rem;
+}
+
+.sidebar_span {
+  margin-left: 7px;
+  color: #fafafa;
+  position: absolute;
+  left: 2rem;
+  white-space: nowrap;
+}
+
+.sidebar_span.spanHidden {
+  display: none;
+}
+
+.sidebar_logo_container {
+  width: 50%;
+  margin-left: 2rem;
+}
+
+.sidebar_logo_container img {
+  border-radius: 10px;
+}
